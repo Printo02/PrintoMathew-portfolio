@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myportfolio - Index</title>
+
+  <!----- CSS -----> 
+  <link rel="stylesheet" href="css/style.css">
+
+  <!----- Bootstrap icons -----> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://fontawesome.com/icons/user-graduate?f=classic&s=solid">
+
+  <style>
+    /* font style */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+  /* ---------- Menu  ---------- */
+    .toggle-btn {
+      display: none;
+      font-size: 26px;
+      color: white;
+      cursor: pointer;
+      z-index: 999;
+    }
+
+    .side-menu {
+      position: fixed;
+      top: 0;
+      right: -260px;
+      width: 250px;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.98);
+      backdrop-filter: blur(10px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: right 0.4s ease;
+      z-index: 1000;
+    }
+
+    .side-menu.active {
+      right: 0;
+    }
+
+    .side-menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      margin: 15px 0;
+      transition: color 0.3s;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .side-menu a:hover {
+      color: #00bfa6;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 30px;
+      font-size: 3.2rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        display: none;
+      }
+      .toggle-btn {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!----- Header -----> 
+  <div class="header" id="index">
+    <div class="logo">
+      <h2>Printo<span style="color: #00bfa6; font-size: 1.8rem;">.</span></h2>
+      <span class="toggle-btn" onclick="openMenu()">☰</span>
+    </div>
+
+    <video autoplay muted loop class="bg-video">
+      <source src="files/bg-video/Moving White Particles Overlay For Edit [4K].mp4" type="video/mp4">
+    </video>
+
+    <nav class="navbar">
+      <ul class="nav-bar-ul">
+        <li class="nav-bar-li"><a href="#about">About</a></li>
+        <li class="nav-bar-li"><a href="education.html">Education</a></li>
+        <li class="nav-bar-li"><a href="experience.html">Experience</a></li>
+        <li class="nav-bar-li"><a href="skills.html">Skills</a></li>
+        <li class="nav-bar-li"><a href="projects.html">Projects</a></li>
+        <li class="nav-bar-li"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Side Menu (mobile view) -->
+  <div class="side-menu" id="sideMenu">
+    <span class="close-btn" onclick="closeMenu()">×</span>
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="education.html" onclick="closeMenu()">Education</a>
+    <a href="experience.html" onclick="closeMenu()">Experience</a>
+    <a href="skills.html" onclick="closeMenu()">Skills</a>
+    <a href="projects.html" onclick="closeMenu()">Projects</a>
+    <a href="contact.html" onclick="closeMenu()">Contact</a>
+  </div>
+  <!----- Header-End -----> 
+
+  <!----- Intro  -----> 
+  <div class="intro">
+    <div class="row">
+      <div class="intro-img-repo">
+        <img src="files/imgs/intro-img.png" alt="image">
+      </div>
+      <div class="intro-text">
+        <h1>Hi, I'm Printo Mathew</h1>
+        <h2>SOFTWARE DEVELOPER</h2>
+        <div class="social-media-icons">
+          <a href="https://www.linkedin.com/in/printo-mathew?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" title="Linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/Printo02" title="Github"><i class="bi bi-github"></i></a>
+          <a href="https://www.instagram.com/printo_mathew_?igsh=bmk0anBuMXFhNDNl" title="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://x.com/PrintoMathew06?t=VTpSMeSoZAcl87NMdse2_Q&s=08" title="X"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.facebook.com/share/1AtkRHsMG4/" title="Facebook"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+      <div class="intro-img">
+        <img src="files/imgs/intro-img.png" alt="image">
+      </div>
+    </div>
+  </div>
+  <!----- Intro-End  -----> 
+
+  <!----- About Section -----> 
+  <div class="about" id="about">
+    <h1>About Me<span style="color:#00bfa6">.</span></h1>
+    <div class="row-about">
+      <div class="about-img">
+        <img src="files/imgs/internship-2.JPG" alt="img-about">
+      </div>
+      <div class="about-text">
+        <p>
+          Hello, I am a recent BCA graduate from Mahatma Gandhi University and have a strong interest in development.
+          I enjoy using simple code and creative solutions to transform concepts into useful, user-friendly digital experiences.
+          I'm constantly learning new technologies and improving my abilities to create better, more intelligent solutions.
+        </p>
+        <div class="about-btn">
+          <a href="projects.html"><button class="about-btn-1">View Projects </button></a>
+          <a href="files/doc/resume.pdf" download class="about-btn-2">Download CV <i class="bi bi-download"> </i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!----- About-End  -----> 
+
+  <!---- upward arrow  ----> 
+  <button id="scrollToTopBtn" onclick="scrollToTop()">&#8593;</button>
+
+  <!----- Footer -----> 
+  <div class="footer">
+    <div class="footer-copyright">
+      <p>© 2025 Printo Mathew. All Rights Reserved .</p>
+    </div>
+    <div class="footer-social-media-icons">
+      <a href="https://www.linkedin.com/in/printo-mathew" title="Linkedin" class="contact-icons"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/Printo02" title="Github" class="contact-icons"><i class="bi bi-github"></i></a>
+      <a href="https://www.instagram.com/printo_mathew_" title="Instagram" class="contact-icons"><i class="bi bi-instagram"></i></a>
+      <a href="https://x.com/PrintoMathew06" title="X" class="contact-icons"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://www.facebook.com/share/1AtkRHsMG4/" title="Facebook" class="contact-icons"><i class="bi bi-facebook"></i></a>
+      <a href="https://discord.com/users/printo_mathew__" title="Discord" class="contact-icons"><i class="fa-brands fa-discord"></i></a>
+    </div>
+  </div>
+  <!----- Footer-End -----> 
+
+  <script src="https://kit.fontawesome.com/9bc2fedafd.js" crossorigin="anonymous"></script>
+  <script src="js/nav-active.js"></script>
+  <script src="js/up_arrow.js"></script>
+
+  <script>
+    function openMenu() {
+      document.getElementById("sideMenu").classList.add("active");
+    }
+
+    function closeMenu() {
+      document.getElementById("sideMenu").classList.remove("active");
+    }
+  </script>
+
+</body>
+</html>

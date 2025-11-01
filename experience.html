@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myportfolio - Experience</title>
+  <!----- CSS ----->
+  <link rel="stylesheet" href="css/style.css">
+  <!----- Bootstrap icons ----->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://fontawesome.com/icons/user-graduate?f=classic&s=solid">
+</head>
+  <style>
+  /* font style */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+  @import "bootstrap-icons/font/bootstrap-icons.css";
+  /* ---------- Menu  ---------- */
+  .toggle-btn {
+    display: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .side-menu {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.98);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.4s ease;
+    z-index: 1000;
+  }
+
+  .side-menu.active {
+    right: 0;
+  }
+
+  .side-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 15px 0;
+    transition: color 0.3s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .side-menu a:hover {
+    color: #00bfa6;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      display: none;
+    }
+    .toggle-btn {
+      display: block;
+    }
+  }
+</style>
+<body>
+
+<!----- Header ----->
+  <div class="header" id="index">
+    <div class="logo">
+      <h2>Printo<span style="color: #00bfa6; font-size: 1.8rem;">.</span></h2>
+      <span class="toggle-btn" onclick="openMenu()">☰</span>
+    </div>
+    <nav class="navbar">
+      <ul class="nav-bar-ul">
+        <li class="nav-bar-li"><a href="index.html" class="active">Home</a></li>
+        <li class="nav-bar-li"><a href="education.html">Education</a></li>
+        <li class="nav-bar-li active"><a href="experience.html">Experience</a></li>
+        <li class="nav-bar-li"><a href="skills.html">Skills</a></li>
+        <li class="nav-bar-li"><a href="projects.html">Projects</a></li>
+        <li class="nav-bar-li"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+    <!-- Side Menu (mobile view) -->
+  <div class="side-menu" id="sideMenu">
+    <span class="close-btn" onclick="closeMenu()">×</span>
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <a href="education.html" onclick="closeMenu()">Education</a>
+    <a href="experience.html" onclick="closeMenu()">Experience</a>
+    <a href="skills.html" onclick="closeMenu()">Skills</a>
+    <a href="projects.html" onclick="closeMenu()">Projects</a>
+    <a href="contact.html" onclick="closeMenu()">Contact</a>
+  </div>
+  <!----- Header-End ----->
+
+
+<!----- Experience Section ----->
+<div class="timeline-exp" id="timeline-exp">
+  <h1>Experience <i class="bi bi-ui-checks"></i></h1>
+  <div class="timeline-row-exp">
+    <!-- column 1 -->
+    <div class="timeline-col-exp">
+      <div class="title">
+        <!-- <h2>Education</h2> -->
+      </div>
+        <div class="timeline-box-exp">
+          <div class="timeline-content-exp">
+            <div class="content-exp">
+              <div class="year-exp">
+                <h4><i class="bi bi-calendar4"></i>  3 - 14 MAR  2025 </h4>
+              </div>
+              <div class="course-exp">
+                <h3>Artificial Intelligence and Machine Learning Internship</h3>
+              </div>
+              <p>Participated in a 2-week internship at ICT Academy of Kerala, held at UL Cyberpark, Kozhikode.<br>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="timeline-box-exp">
+          <div class="timeline-content-exp">
+            <div class="content-exp">
+              <div class="year-exp">
+                <h4><i class="bi bi-calendar4"></i>  3 - 14 MAR  2025 </h4>
+              </div>
+              <div class="course-exp">
+                <h3>Artificial Intelligence and Machine Learning Internship</h3>
+              </div>
+              <p>Participated in a 2-week internship on AI & ML at ICT Academy of Kerala,<br> held at UL Cyberpark, Kozhikode.
+              </p>
+            </div>
+          </div>
+        </div> -->
+    </div>
+    <!-- column 2 -->
+    <div class="timeline-col-exp">
+      <div class="title-exp">
+        <!-- <h2>Experience</h2> -->
+      </div>
+        <div class="timeline-box-exp">
+          <div class="timeline-content-exp">
+            <div class="content-exp">
+            <div class="year-exp">
+              <h4><i class="bi bi-calendar4"></i> 29 JAN 2025 </h4>
+            </div>
+            <div class="course-exp">
+            <h3>Python Workshop </h3>
+            </div>
+            <p>Attended a 1-day Python workshop organized by Young Tech IT Solutions, Kottayam, held at PGM College, Kangazha.</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="timeline-box-exp">
+          <div class="timeline-content-exp">
+            <div class="content-exp">
+            <div class="year-exp">
+              <h4><i class="bi bi-calendar4"></i> 29 JAN 2025 </h4>
+            </div>
+            <div class="course-exp">
+            <h3>Python Workshop </h3>
+            </div>
+            <p>Attended a 1-day Python workshop organized by Young Tech IT Solutions, Kottayam, held at PGM College, Kangazha.</p>
+            </div>
+          </div>
+        </div> -->
+    </div>
+  </div>
+</div>
+
+
+<!----- Experience repo ----->
+<div class="timeline-exp" id="timeline-exp-repo">
+  <h1>Experience <i class="bi bi-ui-checks"></i></h1>
+    <div class="timeline-col-exp">
+      <div class="title">
+      </div>
+        <div class="timeline-box-exp">
+          <div class="timeline-content-exp">
+            <div class="content-exp">
+              <div class="year-exp">
+                <h4><i class="bi bi-calendar4"></i>  3 - 14 MAR  2025 </h4>
+              </div>
+              <div class="course-exp">
+                <h3>Artificial Intelligence and Machine Learning Internship</h3>
+              </div>
+              <p>Participated in a 2-week internship at ICT Academy of Kerala, held at UL Cyberpark, Kozhikode.<br>
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="timeline-col-exp">
+      <div class="title-exp">
+        <!-- <h2>Experience</h2> -->
+      </div>
+        <div class="timeline-box-exp">
+          <div class="timeline-content-exp">
+            <div class="content-exp">
+            <div class="year-exp">
+              <h4><i class="bi bi-calendar4"></i> 29 JAN 2025 </h4>
+            </div>
+            <div class="course-exp">
+            <h3>Python Workshop </h3>
+            </div>
+            <p>Attended a 1-day Python workshop organized by Young Tech IT Solutions, Kottayam, held at PGM College, Kangazha.</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="timeline-box-exp">
+          <div class="timeline-content-exp">
+            <div class="content-exp">
+            <div class="year-exp">
+              <h4><i class="bi bi-calendar4"></i> 29 JAN 2025 </h4>
+            </div>
+            <div class="course-exp">
+            <h3>Python Workshop </h3>
+            </div>
+            <p>Attended a 1-day Python workshop organized by Young Tech IT Solutions, Kottayam, held at PGM College, Kangazha.</p>
+            </div>
+          </div>
+        </div> -->
+    </div>
+</div>
+
+<!----- Footer ----->
+  <div class="footer">
+    <div class="footer-copyright">
+      <p>© 2025 Printo Mathew. All Rights Reserved .</p>
+    </div>
+    <div class="footer-social-media-icons">
+        <a href="https://www.linkedin.com/in/printo-mathew?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" title="Linkedin" class="contact-icons"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Printo02" title="Github" class="contact-icons"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/printo_mathew_?igsh=bmk0anBuMXFhNDNl" title="Instagram" class="contact-icons"><i class="bi bi-instagram"></i></a>
+        <a href="https://x.com/PrintoMathew06?t=VTpSMeSoZAcl87NMdse2_Q&s=08" title="X" class="contact-icons"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/share/1AtkRHsMG4/" title="Facebook" class="contact-icons"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.threads.com/@printo_mathew_" title="Threads" class="contact-icons"><i class="fa-brands fa-square-threads"></i></a>
+        <a href="https://discord.com/users/printo_mathew__" title="Discord" class="contact-icons"><i class="fa-brands fa-discord"></i></a>
+    </div>
+  </div>
+<!----- Footer-End ----->
+</body>
+<script src="https://kit.fontawesome.com/9bc2fedafd.js" crossorigin="anonymous"></script>
+<script src="js/nav-active.js"></script>
+<script src="js/menu.js"></script>
+<!-- <script src="js/up_arrow.js"></script> -->
+</html>
